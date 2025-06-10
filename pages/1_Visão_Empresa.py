@@ -20,7 +20,13 @@ st.set_page_config(page_title= 'Visão Empresa', layout="wide")
 # ----------------------------
 # Importando o data set
 # ----------------------------
-df = pd.read_csv('../train.csv')
+try:
+    df = pd.read_csv('dataset/train.csv')
+except Exception as e:
+    import streamlit as st
+    st.error(f"Erro ao carregar CSV: {e}")
+    df = None
+
 
 df1 = df.copy()
 
