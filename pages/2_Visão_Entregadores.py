@@ -109,7 +109,13 @@ def clean_code (df1):
 
 
 # Importando o data set
-df = pd.read_csv('../train.csv')
+try:
+    df = pd.read_csv('dataset/train.csv')
+except Exception as e:
+    import streamlit as st
+    st.error(f"Erro ao carregar CSV: {e}")
+    df = None
+
 
 # Limpando o dataset
 df1 = clean_code (df)
