@@ -1,6 +1,6 @@
 streamlit==1.15.1
 pandas==2.2.2
-plotly==5.10.0
+plotly==5.22.0
 folium==0.16.0
 streamlit-folium==0.18.0
 haversine==2.8.1
