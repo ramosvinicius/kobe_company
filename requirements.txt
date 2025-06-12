@@ -1,6 +1,8 @@
 streamlit==1.15.1
-pandas==2.2.2
-plotly==5.22.0
-folium==0.16.0
+plotly==5.10.0
+pandas==1.4.3
+folium==0.13.0
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+haversine==2.7.0
 streamlit-folium==0.18.0
-haversine==2.8.1
